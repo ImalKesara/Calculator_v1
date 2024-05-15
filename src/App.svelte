@@ -69,35 +69,35 @@
       <input type="text" bind:value={console}>
     </div>
     <div class="second-row">
-      <button class="btn glass" on:click={()=>{setOperation('C');}}>C</button>
-      <button class="btn glass">+/-</button>
-      <button class="btn glass">.</button>
+      <button class="btn btn-warning" on:click={()=>{setOperation('C');}}>C</button>
+      <button class="btn btn-warning">💀</button>
+      <button class="btn btn-warning">❤️</button>
       <button class="btn btn-warning" on:click={()=>{setOperation('divide');}}> &divide</button>
     </div>
 
     <div class="third-row">
-      <button class="btn glass" on:click={()=>{setValue(9);}}>9</button>
-      <button class="btn glass" on:click={()=>{setValue(8);}}>8</button>
-      <button class="btn glass" on:click={()=>{setValue(7);}}>7</button>
+      <button class="btn btn-warning btn-circle" on:click={()=>{setValue(9);}}>9</button>
+      <button class="btn btn-warning" on:click={()=>{setValue(8);}}>8</button>
+      <button class="btn btn-warning" on:click={()=>{setValue(7);}}>7</button>
       <button class="btn btn-warning" on:click={()=>{setOperation('multiply');}}> &times; </button>
     </div>
 
     <div class="forth-row">
-      <button class="btn glass" on:click={()=>{setValue(6);}}>6</button>
-      <button class="btn glass" on:click={()=>{setValue(5);}}>5</button>
-      <button class="btn glass" on:click={()=>{setValue(4);}}>4</button>
+      <button class="btn btn-warning" on:click={()=>{setValue(6);}}>6</button>
+      <button class="btn btn-warning" on:click={()=>{setValue(5);}}>5</button>
+      <button class="btn btn-warning" on:click={()=>{setValue(4);}}>4</button>
       <button class="btn btn-warning" on:click={()=>{setOperation('add');}}> + </button>
     </div>
 
     <div class="fifth-row">
-      <button class="btn glass" on:click={()=>{setValue(3);}}>3</button>
-      <button class="btn glass" on:click={()=>{setValue(2);}}>2</button>
-      <button class="btn glass" on:click={()=>{setValue(1);}}>1</button>
+      <button class="btn btn-warning btn-xs sm:btn-sm md:btn-md lg:btn-lg" on:click={()=>{setValue(3);}}>3</button>
+      <button class="btn btn-warning" on:click={()=>{setValue(2);}}>2</button>
+      <button class="btn btn-warning " on:click={()=>{setValue(1);}}>1</button>
       <button class="btn btn-warning" on:click={()=>{setOperation('substract');}}> - </button>
     </div>
 
     <div class="sixth-row">
-      <button class="btn glass" on:click={()=>{setValue(0);}}>0</button>
+      <button class="btn btn-warning" on:click={()=>{setValue(0);}}>0</button>
       <button class="btn btn-error" on:click={()=>{equal();}}>=</button>
     </div>
   </div>
@@ -113,8 +113,17 @@
 
 
 .fix{
-  background: rgb(247,41,255);
- background: radial-gradient(circle, rgba(247,41,255,1) 0%, rgba(223,76,250,1) 35%, rgba(148,187,233,1) 100%); 
+  background-color: #0093E9;
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+/* background-color: #FFDEE9;
+background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%); */
+
+
+/* background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); */
+
+
   width: 100%;
   height: 100%;
   position: absolute;
@@ -195,6 +204,8 @@
   justify-items: center;
   align-items: center;
   gap: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 
 </style>
